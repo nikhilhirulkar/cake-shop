@@ -1,0 +1,48 @@
+.login {
+  width: 350px;
+  margin: 100px auto;
+}
+
+.login .logo {
+  text-align: center;
+}
+
+.login .logo img {
+  width: 100px;
+}
+
+.login .label {
+  font-size: 13px;
+  color: #777777;
+  margin: 0;
+}
+
+.login .input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.login .input:focus {
+  outline: none;
+}
+
+.login .password {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.login .password:focus {
+  outline: none;
+}
+
+.login .mb-4 {
+  margin-bottom: 20px;
+}
