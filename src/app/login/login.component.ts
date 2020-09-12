@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
+import {Router} from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,10 +9,15 @@ import {MatCardModule} from '@angular/material/card';
 }
 )
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+ 
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
+  }
+
+  jumpToHome(){
+    this.router.navigateByUrl('/home');
+    console.log("homee")
   }
 
 }
