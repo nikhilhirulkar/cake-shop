@@ -1,16 +1,22 @@
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid black;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 8px;
-    width:25%;
-  }
-  
-  h2{
-  text-align:center;
-  }
+.product {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.product table {
+  width: 100%;
+  text-align: left;
+}
+
+.product table .icon {
+  color: #ff4081;
+}
+
+.product table th {
+  color: #ff4081;
+}
+
+.product table th, .product table td {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}

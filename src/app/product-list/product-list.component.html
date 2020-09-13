@@ -1,42 +1,63 @@
-<h2>Product List Page</h2>
+<mat-toolbar color="accent">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Cake Shop</span>
+  <span class="example-spacer"></span>
+  <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button> -->
+</mat-toolbar>
 
+<div class="product">
+  <mat-card>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Tag Name</th>
+            <th>Rate</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
 
-<div style="overflow-x:auto;">
-  <table>
-    <tr>
-      <th>Product Name</th>
-      <th>Tag Name</th>
-      <th>Rate</th>
-      <th>Action</th>
-    </tr>
-    <tr>
-      <td>Black Forest</td>
-      <td>1 kg</td>
-      <td>250</td>
-      <td>
-     <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-     <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
-    </tr>
-    <tr>
-      <td>Rasmalai</td>
-      <td>1 kg</td>
-      <td>550</td>
-      <td><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
-    </tr>
-    <tr>
-      <td>Pinapple</td>
-      <td>1 kg</td>
-      <td>250</td>
-      <td><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
-    </tr>
-     <tr>
-      <td>Straberry</td>
-      <td>1 kg</td>
-      <td>250</td>
-      <td><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
-    </tr>
-  </table>
+          <tr>
+            <td>Black Forest</td>
+            <td>1 kg</td>
+            <td>250</td>
+            <td class="icon">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+          <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
+          </tr>
+          <tr>
+            <td>Rasmalai</td>
+            <td>1 kg</td>
+            <td>550</td>
+            <td class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+              <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
+          </tr>
+          <tr>
+            <td>Pinapple</td>
+            <td>1 kg</td>
+            <td>250</td>
+            <td class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+              <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
+          </tr>
+          <tr>
+            <td>Straberry</td>
+            <td>1 kg</td>
+            <td>250</td>
+            <td class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+              <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </mat-card>
 </div>
+
