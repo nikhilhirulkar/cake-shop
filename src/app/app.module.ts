@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import {MatIconModule} from '@angular/material/icon';
+import { AddtagComponent } from './addtag/addtag.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {MatIconModule} from '@angular/material/icon';
     HomeComponent,
     AddProductComponent,
     ProductListComponent,
+    AddtagComponent,
   ],
   imports: [
     BrowserModule,
