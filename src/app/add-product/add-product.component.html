@@ -1,24 +1,32 @@
+<mat-toolbar color="accent">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Cake Shop</span>
+  <span class="example-spacer"></span>
+  <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button> -->
+</mat-toolbar>
+
 <div class="container">
-    <form action="/action_page.php">
-    <div class="row" id="head">
+  <mat-card>
+    <form action="/product">
+    <div class="row head">
     <label>Add Product Information </label>
     </div>
     <hr>
       <div class="row">
-        <div class="col-50">
-          <label>Product Name</label>
+       <div class="col-50">
+        <label>Product Name</label>
+          <input class="input" type="text" >
         </div>
-         <div class="col-50">
+       <div class="col-50">
           <label>Select Tag</label>
-        </div>
-        
-      </div>
-      <div class="row">
-       <div class="col-50">
-          <input type="text" >
-        </div>
-       <div class="col-50">
-          <select >
+          <select class="input" >
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
@@ -26,27 +34,20 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-50">
+         <div class="col-50">
           <label>Price</label>
+          <input class="input" type="text">
         </div>
         <div class="col-50">
           <label>Code</label>
-        </div>
-       
-      </div>
-      <div class="row">
-         <div class="col-50">
-          <input type="text">
-        </div>
-        <div class="col-50">
-          <input type="text">
+          <input class="input" type="text">
         </div>
       </div>
       <br>
-      <div class="row">
-        <input type="submit" value="Save">
+      <div class="row text-right mr-2">
+        <button mat-raised-button color="accent">SAVE</button>
       </div>
     </form>
+  </mat-card>
   </div>
-<hr>
-<app-product-list></app-product-list>
+<!-- <app-product-list></app-product-list> -->

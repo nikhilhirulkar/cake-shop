@@ -1,58 +1,70 @@
-<br>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <h3>Product List</h3>
-    </div>
-  </div>
-  <div class="column" >
-    <div class="card">
-      <h3>Add Product</h3>
-    </div>
-  </div>
-  <div class="column" >
-    <div class="card">
-      <h3>Tag List</h3>
-    </div>
-  </div>
-</div>
-<br>
+<mat-toolbar color="accent">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Cake Shop</span>
+  <span class="example-spacer"></span>
+  <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button> -->
+</mat-toolbar>
 
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <h3>Add Tag</h3>
+<div class="home">
+  <div class="row">
+    <div class="column">
+      <div class="card" (click)="changedPage('/add-product')">
+        <h3><mat-icon>add_circle</mat-icon><span>Add Product</span></h3>
+      </div>
+    </div>
+    <div class="column" >
+      <div class="card">
+        <h3><mat-icon>library_books</mat-icon><span> Product List</span></h3>
+      </div>
+    </div>
+    <div class="column" >
+      <div class="card">
+        <h3><mat-icon>list</mat-icon><span>Tag List</span></h3>
+      </div>
     </div>
   </div>
-  <div class="column" >
-    <div class="card">
-      <h3>Create Bill</h3>
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <h3><mat-icon>cake</mat-icon><span> Create Bill</span></h3>
+      </div>
+    </div>
+    <div class="column" >
+      <div class="card">
+        <h3><mat-icon>view_list</mat-icon><span> Bill List</span></h3>
+      </div>
+    </div>
+    <div class="column" >
+      <div class="card">
+        <h3><mat-icon>report</mat-icon><span> Sales Report</span></h3>
+      </div>
     </div>
   </div>
-  <div class="column" >
-    <div class="card">
-      <h3>Bill List</h3>
+  
+  <div class="row">
+    <div class="column" >
+      <!-- <div class="card">
+        <h3>Logout</h3>
+      </div> -->
+    </div>
+    <div class="column">
+      <div class="card">
+        <h3><mat-icon>input</mat-icon><span> Logout</span></h3>
+      </div>
+    </div>
+    <div class="column" >
+      <!-- <div class="card">
+        <h3>Add Product</h3>
+      </div> -->
     </div>
   </div>
 </div>
-<br>
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <h3>Sales Report</h3>
-    </div>
-  </div>
-  <div class="column" >
-    <div class="card">
-      <h3>Logout</h3>
-    </div>
-  </div>
-  <div class="column" >
-    <div class="card">
-      <h3>Add Product</h3>
-    </div>
-  </div>
-</div>
-<hr>
-<app-add-product></app-add-product>
+<app-salesreport></app-salesreport>
