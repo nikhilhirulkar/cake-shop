@@ -1,22 +1,29 @@
-<div class="row">
-    <button class="btn">Toggle Sales Report</button>
-    </div>
-    <div class="row">
-    <div class="date">
-    <label>Date :</label><input type="date"> TO <input type="date">
-    </div>
-    </div>
-    <br><br>
-    <div class="row">
-    <div class="col-90">
-    <label>Sales Report List</label><br>
-    (Plain product : &#9734;,Custom product : &#9733;)
-    </div>
-    <div class="col-10">
-    <button class="btn">Export CSV</button>
-    </div>
-    </div>
-    <br>
+<mat-toolbar color="accent">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Cake Shop</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<div style="padding: 20px;">
+  <mat-card>
+      <div style="display: flex; justify-content: space-between; padding: 15px 0;">
+        <button mat-raised-button color="accent">Toggle Sales Report</button>
+        <div class="flex items-center">
+        <label>Date : &nbsp;</label><input type="date" class="date"> &nbsp; TO &nbsp; <input type="date" class="date">
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; padding: 15px 0;">
+        <div class="col-90">
+        <label>Sales Report List</label><br>
+        (Plain product : &#9734;,Custom product : &#9733;)
+        </div>
+        <button mat-raised-button color="accent">Export CSV</button>
+      </div>
+  </mat-card>
+</div>
+<div style="padding: 20px;">
+  <mat-card>
     <div style="overflow-x:auto;">
       <table>
         <tr>
@@ -101,4 +108,6 @@
           </tr>
       </table>
     </div>
+  </mat-card>
+</div>
     
