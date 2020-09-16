@@ -19,6 +19,11 @@ import { HomeComponent } from './home/home.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 
+
+import { AddtagComponent } from './addtag/addtag.component';
+import { SalesreportComponent } from './salesreport/salesreport.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +32,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     HomeComponent,
     AddProductComponent,
     ProductListComponent,
+    AddtagComponent,
+    SalesreportComponent,
   ],
   imports: [
     BrowserModule,
