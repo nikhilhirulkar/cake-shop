@@ -22,6 +22,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 
 import { AddtagComponent } from './addtag/addtag.component';
 import { SalesreportComponent } from './salesreport/salesreport.component';
+import { CreateBillComponent } from './create-bill/create-bill.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { SalesreportComponent } from './salesreport/salesreport.component';
     ProductListComponent,
     AddtagComponent,
     SalesreportComponent,
+    CreateBillComponent,
   ],
   imports: [
     BrowserModule,
