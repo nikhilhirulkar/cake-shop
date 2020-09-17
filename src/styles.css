@@ -11,3 +11,11 @@ html .text-right, body .text-right {
 html .pointer, body .pointer {
   cursor: pointer;
 }
+
+html .flex, body .flex {
+  display: flex;
+}
+
+html .items-center, body .items-center {
+  align-items: center;
+}

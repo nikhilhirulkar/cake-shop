@@ -10,6 +10,12 @@ table {
     padding: 8px;
     border: 1px solid black;
   }
+  th {
+    color: #ff4081;
+  }
+  .date {
+    padding: 5px;
+  }
   
   .btn {
     border: none;
