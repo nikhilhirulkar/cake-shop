@@ -4,46 +4,40 @@
   </button>
   <span>Cake Shop</span>
   <span class="example-spacer"></span>
-  <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button> -->
 </mat-toolbar>
 
 <div class="home">
   <div class="row">
     <div class="column">
-      <div class="card">
+      <div class="card pointer" (click)="changedPage('/add-product')">
         <h3><mat-icon>add_circle</mat-icon><span>Add Product</span></h3>
       </div>
     </div>
     <div class="column" >
-      <div class="card">
+      <div class="card pointer" (click)="changedPage('/product')">
         <h3><mat-icon>library_books</mat-icon><span> Product List</span></h3>
       </div>
     </div>
     <div class="column" >
-      <div class="card">
-        <h3><mat-icon>list</mat-icon><span>Tag List</span></h3>
+      <div class="card pointer" (click)="changedPage('/add-tag')">
+        <h3><mat-icon>label</mat-icon><span>Add Tag</span></h3>
       </div>
     </div>
   </div>
   
   <div class="row">
     <div class="column">
-      <div class="card">
+      <div class="card pointer">
         <h3><mat-icon>cake</mat-icon><span> Create Bill</span></h3>
       </div>
     </div>
     <div class="column" >
-      <div class="card">
+      <div class="card pointer">
         <h3><mat-icon>view_list</mat-icon><span> Bill List</span></h3>
       </div>
     </div>
     <div class="column" >
-      <div class="card">
+      <div class="card pointer" (click)="changedPage('/sales-report')">
         <h3><mat-icon>report</mat-icon><span> Sales Report</span></h3>
       </div>
     </div>
@@ -67,3 +61,4 @@
     </div>
   </div>
 </div>
+<!-- <app-salesreport></app-salesreport> -->

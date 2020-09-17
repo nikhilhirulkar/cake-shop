@@ -16,6 +16,12 @@ import {MatGridListModule} from '@angular/material/grid-list';
 
 
 import { HomeComponent } from './home/home.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { ProductListComponent } from './product-list/product-list.component';
+
+
+import { AddtagComponent } from './addtag/addtag.component';
+import { SalesreportComponent } from './salesreport/salesreport.component';
 
 
 @NgModule({
@@ -24,6 +30,10 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     DashboardComponent,
     HomeComponent,
+    AddProductComponent,
+    ProductListComponent,
+    AddtagComponent,
+    SalesreportComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +43,7 @@ import { HomeComponent } from './home/home.component';
     MatButtonModule,
     MatToolbarModule,
     MatFormFieldModule,
+    MatDividerModule,
     MatIconModule,
     MatGridListModule,
     MatDividerModule

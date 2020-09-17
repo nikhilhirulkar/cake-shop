@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+  }
+  th {
+    color: #ff4081;
+  }
+  .date {
+    padding: 5px;
+  }
+  
+  .btn {
+    border: none;
+    background-color:maroon;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .date{
+  float:right;
+}
+
+  .col-90{
+  float:left;
+  width:90%
+  }
+
+  col-10{
+  float:right;
+  width:10%;
+  }
+
+  label{
+  color:maroon;
+  }

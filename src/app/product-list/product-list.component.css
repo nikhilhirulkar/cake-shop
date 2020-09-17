@@ -1,0 +1,22 @@
+.product {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.product table {
+  width: 100%;
+  text-align: left;
+}
+
+.product table .icon {
+  color: #ff4081;
+}
+
+.product table th {
+  color: #ff4081;
+}
+
+.product table th, .product table td {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
