@@ -24,6 +24,8 @@ import { AddtagComponent } from './addtag/addtag.component';
 import { SalesreportComponent } from './salesreport/salesreport.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateBillComponent } from './create-bill/create-bill.component';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProductListComponent,
     AddtagComponent,
     SalesreportComponent,
+    CreateBillComponent,
   ],
   imports: [
     BrowserModule,
