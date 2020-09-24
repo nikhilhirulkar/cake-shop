@@ -22,7 +22,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 
 import { AddtagComponent } from './addtag/addtag.component';
 import { SalesreportComponent } from './salesreport/salesreport.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,9 @@ import { SalesreportComponent } from './salesreport/salesreport.component';
     MatDividerModule,
     MatIconModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
