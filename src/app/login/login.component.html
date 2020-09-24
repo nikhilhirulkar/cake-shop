@@ -4,12 +4,12 @@
             <img src="../../assets/images/11-117633_2717-x-2464-13-birthday-cake-logo-png.png" alt="" srcset="">
         </div>
        <p class="label">Username</p>
-       <input type="text" class="input">
+       <input type="text" class="input" name="username" #ctrlName="ngModel" [(ngModel)]="username">
        <p class="label">Password</p>
-       <input type="password" class="password">
+       <input type="password" class="password" name="password" #ctrlName="ngModel" [(ngModel)]="password">
        <p class="text-right pointer">Forget Password?</p>
        <div class="logo mb-4">
-           <button mat-raised-button color="accent" (click)="jumpToHome()">LOGIN</button>
+           <button mat-raised-button color="accent" (click)="login()">LOGIN</button>
        </div>
     </mat-card>
 
