@@ -18,42 +18,15 @@
       <table>
         <thead>
           <tr>
-            <th>Product Name</th>
-            <th>Tag Name</th>
-            <th>Rate</th>
-            <th>Action</th>
+            <th *ngFor="let col of columns">{{col}}</th>
           </tr>
         </thead>
         <tbody>
-
-          <tr>
-            <td>Black Forest</td>
-            <td>1 kg</td>
-            <td>250</td>
+           <tr *ngFor="let product of productData">
+            <td *ngFor="let col of index"> {{product[col]}}</td>
             <td class="icon">
           <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
           <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
-          </tr>
-          <tr>
-            <td>Ras malai</td>
-            <td>1 kg</td>
-            <td>550</td>
-            <td class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-              <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
-          </tr>
-          <tr>
-            <td>Pine apple</td>
-            <td>1 kg</td>
-            <td>250</td>
-            <td class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-              <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
-          </tr>
-          <tr>
-            <td>Sta berry</td>
-            <td>1 kg</td>
-            <td>250</td>
-            <td class="icon"><mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-              <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></td>
           </tr>
         </tbody>
       </table>
