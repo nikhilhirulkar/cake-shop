@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -15,14 +14,12 @@ export class LoginService {
     
    }
    
-  url="https://reqres.in/api/";
+  url="http://nikhilhirulkar1994.pythonanywhere.com/login/";
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json'
     })
   }
-
-
 
   public loginUser(username, password): Observable<any> {
     // let loginParams = new HttpParams().set('username', username).set('password', password);
@@ -30,7 +27,7 @@ export class LoginService {
     return this.http.post<any>(
       this.url + 'login',
       {
-        email : username,
+        username : username,
         password: password
       },
       this.httpOptions
